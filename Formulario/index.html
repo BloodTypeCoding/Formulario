@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <form id="contact-form">
+        <h2>Información de contacto</h2>
+        <div id="fields">
+            <label>Nombre completo</label>
+            <input type="text" name="nombre" required>
+
+            <label>ID / Documento</label>
+            <input type="text" name="documento" required>
+
+            <label>Programa de interés</label>
+            <select name="programa" required>
+                <option value="">Seleccione una opción</option>
+                <option value="Validacion">Validación de Primaria y Bachillerato</option>
+                <option value="Tecnico_mercadeo">Técnico laboral en Mercadeo y Ventas</option>
+                <option value="Tecnico_SST">Técnico laboral en Seguridad y Salud en el Trabajo (SST)</option>
+                <option value="Tecnico_administrativo">Técnico laboral en Auxiliar Administrativo</option>
+                <option value="Tecnico_pedagogia">Técnico Laboral en Pedagogía Infantil</option>
+                <option value="Tecnico_sistemas">Técnico laboral en Sistemas Informáticos</option>
+                <option value="Tecnico_inglés">Técnico Laboral en Inglés</option>
+                <option value="Tecnologia_produccion">Tecnología en Gestión de Producción Industrial</option>
+                <option value="Tecnologia_judicial">Tecnología en Investigación Judicial y Criminalista</option>
+                <option value="Tecnologia_deportiva">Tecnología en Gestión Deportiva</option>
+                <option value="Tecnologia_farmacia">Tecnología en Gerencia de Farmacia</option>
+            </select>
+
+            <label>Correo electrónico</label>
+            <input type="email" name="email" required>
+
+            <label>Número de celular</label>
+            <input type="tel" name="celular" required>
+        </div>
+        <button type="submit">Enviar formulario</button>
+
+        <p id="status"></p>
+    </form>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
